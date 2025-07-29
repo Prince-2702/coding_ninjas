@@ -62,14 +62,14 @@ const offerings = [
 const OurOfferings = () => {
   return (
     <div className="grid sm:grid-cols-1 w-full h-auto px-4 py-10 bg-gray-100 ">
-      <h1 className="grid sm:grid-cols-1 text-9xl font-bold text-center mb-8 text-gray-300">OUR OFFERINGS</h1>
+      <h1 className="flex flex-wrap justify-center items-center text-9xl font-bold text-center mb-8 text-gray-300">OUR OFFERINGS</h1>
 
       <div className='grid sm:grid-cols-1 pt-20'>
         <div className='flex flex-cols-1'>
           <h2 className="flex text-xl font-semibold mx-6 text-gray-700 gap-4"><FaCampground className='text-4xl bg-gray-200 rounded-full p-2  text-yellow-500' /> Job Bootcamp</h2>
           <p className='bg-gray-300 text-sm p-1 rounded-r-full '>For graduates</p>
         </div>
-        <div className="flex justify-center gap-8 mb-10l drop-shadow-xl">
+        <div className="flex flex-wrap justify-center gap-8 mb-10l drop-shadow-xl">
           <div className="grid relative p-8 w-[450px] h-[180px] justify-center items-center bg-gray-200 rounded-2xl mt-20">
             <p className="flex font-medium text-xl text-black-600 gap-4">
               <span className='bg-white rounded-full p-4 mb-3'><FaLayerGroup className=' text-blue-500 text-2xl ' /></span>
@@ -93,11 +93,11 @@ const OurOfferings = () => {
         </div>
       </div>
 
-      <div className="w-[1000px] pt-20 px-4 py-10 min-h-screen  ">
+      <div className=" pt-20 px-4 py-10 min-h-screen  ">
         <div className='flex md:flex-cols-1'>
           <h2 className="flex text-xl font-semibold mx-6 text-gray-700 gap-4"><PiCertificateFill className='text-4xl bg-gray-200 rounded-full p-2 text-yellow-500' />IT Certifications</h2>
         </div>
-        <div className='justify-center items-center ml-80'>
+        <div className='grid justify-center items-center'>
           <div className='flex w-[1000px]'>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mx-2 mt-20 gap-8">
               {offerings.map((item, index) => (
